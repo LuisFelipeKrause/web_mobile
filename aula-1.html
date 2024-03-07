@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da minha página</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+    <!--Praticar e ver elementos em: https://www.w3schools.com/html/html_examples.asp-->
+
+    <h1>Hello Fellans</h1>
+    <img src="img/download.jpeg" alt="">
+    <a href="https://www.friv.com/" target="blank">Clique para se divertir</a>
+        
+    <!--ol>li*3-->
+    <h3>Lista ordenada</h3>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <!--ul>li*3-->
+    <h3>lista não ordenada</h3>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <table>
+        <caption>Descrição da tabela</caption>
+        <thead>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linha 1 - coluna 1</td>
+                <td>Linha 1 - coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 2 - coluna 1</td>
+                <td>Linha 2 - coluna 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="/cadastro/" method="post">
+        Login: <input type="text" name="Login">
+        Senha: <input type="password" name="Senha">
+
+        <input type="radio" name="sexo" value="1" checked> Masculino
+        <input type="radio" name="sexo" value="2"> Feminino
+
+        <input type="checkbox" name="bicicleta" value="1"> Tenho bicicleta
+        <input type="checkbox" name="carro" value="2"> Tenho carro
+
+        <!--select>option*4-->
+        Curso:
+        <select name="curso">
+            <option value="1">Computação</option>
+            <option value="2">Direito</option>
+            <option value="3">Elétrica</option>
+            <option value="4">Medina</option>
+        </select>
+
+        Mensagem: <textarea name="info" cols="30" rows="10"></textarea>
+
+        Idade: <input type="number" name="idade" min="0" max="100" step="1">
+        Data de nascimento: <input type="date" name="nascimento" min="2000-01-01">
+
+        Auto Complete: <input list="cheeses">
+        <!--datalist>option*5-->
+        <datalist id="cheeses">
+            <option>Cheddar</option>
+            <option>Camembert</option>
+            <option>Prato</option>
+            <option>Mozzarella</option>
+            <option>Suíço</option>
+        </datalist>
+
+        <input type="hidden" name="country" value="Brasil"> 
+        <!--Para mandar info por post (fica invisível para o usuário)-->
+
+        <button type="submit">Enviar</button> <!--Envia a requisição com os parâmetros do formulário para 
+        a rota específica, utiliando o verbo especificado (post, get, delete ou put)-->
+        <button type="reset">Limpar</button> <!--Limpa os campos do formulário-->
+    </form>
+
+    <!--Elementos de bloco-->
+    <div>
+        Elementos de bloco
+    </div>
+    <!--Elementos de linha-->
+    <span>1111111</span> 
+    <span>2222222</span>
+</body>
+</html>
